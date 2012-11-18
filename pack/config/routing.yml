@@ -12,6 +12,6 @@
 home:
   rewrite: "/"
   method: "get"
-  actual: "Anchor\PageController"
+  actual: "Anchor\PageIndexView"
   
 ...

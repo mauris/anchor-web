@@ -73,16 +73,3 @@ section.slide:nth-child(1){
     background:#EEE;
     border-radius:3px;
 }
-
-
-@keyframes FadeHalfIn
-{
-    from {opacity: 0.5;}
-    to {opacity:1;}
-}
-
-@keyframes FadeHalfOut
-{
-    from {opacity: 1;}
-    to {opacity:0.5;}
-}

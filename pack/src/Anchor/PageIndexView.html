@@ -3,18 +3,169 @@
     <head>
         <meta charset="utf-8">
         <title>Anchor App for Windows - a marvellously lightweight app for managing local websites</title>
-        <link href="assets/styles/bootstrap.min.css" type="text/css" rel="stylesheet">
-        <link href="assets/styles/bootstrap-responsive.css" type="text/css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <link href="assets/styles/anchor.css" type="text/css" rel="stylesheet">
     </head>
     <body>
         <div class="container">
-            <div class="row">
-                <div>
-                    
+            <div class="row" style="margin-top:50px;">
+                <div class="span4" style="margin-top:-20px; text-align: center;">
+                    <img id="imgScreenshot" class="animateTopFlyIn" src="assets/images/anchor-ss.png" alt="" />
+                </div>
+                <div class="span8">
+                    <header>
+                        <div>
+                            <h1>
+                                Anchor App for Windows
+                            </h1>
+                            <p class="lead" style="color:#555;">
+                                a marvellously lightweight app for managing local websites
+                            </p>
+                        </div>
+                    </header>
+                </div>
+                <div class="span8" id="pnlSlides">
+                    <section class="slide">
+                        <div style="margin: 20px 0;">
+                            <p>
+                                Turn any local folder into a <code>.dev</code> website for an amazing web design and development experience.
+                            </p>
+                            <p>
+                                No <code>http://localhost/</code> or <code>file:///</code> for your local websites anymore.
+                            </p>
+                            <a class="btn btn-warning slideNavigate" data-slide="next">
+                                Learn more
+                            </a>
+                        </div>
+                        <div style="margin: 100px 0;">
+                            <p class="muted">
+                                version 1.0.0 / 943 KB / Windows Installer
+                            </p>
+                            <p id="pnlButtonDownloads">
+                                <a href="https://github.com/downloads/thephpdeveloper/anchor-app/anchor-1.0.0-x86.zip" class="btn btn-large btn-success">
+                                    <i class="icon-download-alt icon-white"></i> Free Download (32-bit)
+                                </a>
+                                <a href="https://github.com/downloads/thephpdeveloper/anchor-app/anchor-1.0.0-x64.zip" class="btn btn-large">
+                                    64-bit
+                                </a>
+                            </p>
+                            <p>
+                                <small>Runs on Windows XP and later, and requires <a href="http://www.wampserver.com/en/" target="_blank">WampServer</a> installed.</small>
+                            </p>
+                        </div>
+                    </section>
+                    <section class="slide">
+                        <h2>
+                            Welcome
+                        </h2>
+                        <div class="alert alert-success">
+                            <i class="icon-file"></i> Anchor builds on top of the Apache HTTP Server in WampServer and takes advantages of Windows hosts file to create a neat web development experience for you. No more <code>http://localhost/example</code> URLs. 
+                        </div>
+                        <div class="alert alert-info">
+                            <i class="icon-thumbs-up"></i> One local Apache HTTP Server instance that serves you PHP, Perl, Python and static HTML+JS applications with ease of configuration and management.
+                        </div>
+                        <div class="alert alert-warning">
+                            <i class="icon-heart"></i> A well designed, simple and familiar user interface to manage multiple websites without the need of copying applications to <code>www</code> or <code>htdocs</code> folder.
+                        </div>
+                        <div class="alert alert-error">
+                            <i class="icon-lock"></i> You can be assured that the settings for the VirtualHosts and hosts file are backed up and secured properly. The domains are hosted locally and cannot be accessed from outside.
+                        </div>
+                        <div class="form-actions">
+                            <button class="btn btn-large slideNavigate"><i class="icon-home"></i></button>
+                            <button class="btn btn-large btn-primary slideNavigate" data-slide="next">Next <i class="icon-chevron-right icon-white"></i></button>
+                        </div>
+                    </section>
+                    <section class="slide">
+                        <div id="interfaceLabels">
+                            <span class="label label-warning" style="left:-330px;top:-70px;">1</span>
+                            <span class="label label-warning" style="left:-265px;top:-70px;">2</span>
+                            <span class="label label-warning" style="left:-120px;top:-70px;">3</span>
+                            <span class="label label-warning" style="left:-420px;top:-20px;">4</span>
+                            <span class="label label-warning" style="left:-380px;top: 45px;">5</span>
+                            <span class="label label-warning" style="left:-335px;top: 45px;">6</span>
+                            <span class="label label-warning" style="left:-290px;top: 45px;">7</span>
+                        </div>
+                        <h2>
+                            The Interface
+                        </h2>
+                        <p>The user interface is simple and easy to use for any developer. As you only need to use Anchor to manage your hosts, you can close Anchor and the hosts will still work.</p>
+                        <p>The following explains the Anchor's user interface shown on the left.</p>
+                        <ul id="interfaceInfo">
+                            <li>
+                                <span class="label label-warning">1</span> <b>Settings</b> button - Shows options to configure Anchor.
+                            </li>
+                            <li>
+                                <span class="label label-warning">2</span> <b>On/Off</b> switch - Turns the Anchor services on or off.
+                            </li>
+                            <li>
+                                <span class="label label-warning">3</span> <b>Add Anchor</b> button - Shows the form to add a new domain name.
+                            </li>
+                            <li>
+                                <span class="label label-warning">4</span> <b>Anchor</b> list - Lists the domains hosted and their options.
+                            </li>
+                            <li>
+                                <span class="label label-warning">5</span> <b>Open</b> button - Opens the anchor in the default browser.
+                            </li>
+                            <li>
+                                <span class="label label-warning">6</span> <b>Browse</b> button - Opens the folder in Windows Explorer.
+                            </li>
+                            <li>
+                                <span class="label label-warning">7</span> <b>Delete</b> button - Confirms and delete the anchor host.
+                            </li>
+                        </ul>
+                        <div class="form-actions">
+                            <button class="btn btn-large slideNavigate"><i class="icon-home"></i></button>
+                            <button class="btn btn-large slideNavigate" data-slide="previous"><i class="icon-chevron-left"></i></button>
+                            <button class="btn btn-large btn-primary slideNavigate" data-slide="next">Next <i class="icon-chevron-right icon-white"></i></button>
+                        </div>
+                    </section>
+                    <section class="slide">
+                        <h2>
+                            Behind the Scenes
+                        </h2>
+                        <p>Anchor does three very simple things:</p>
+                        <ol>
+                            <li>Maintain a list of hosts and their directory pathnames</li>
+                            <li>Write these hosts to a Apache HTTP Server configuration file called <code>anchor.conf</code></li>
+                            <li>Update the Windows hosts file with the list of domain names</li>
+                        </ol>
+                        <blockquote>
+                            <p>
+                                In an event that your hosts file gets corrupted or your entries becomes missing (which shouldn't happen), you can find the original pre-Anchor hosts file as <code>hosts.orig</code>.
+                            </p>
+                        </blockquote>
+                        <h2>
+                            Open Source
+                        </h2>
+                        <p>
+                            Anchor App for Windows is written and built on C# .NET 4.0 with WPF. Sources for the application and its commit history can be found over <a href="https://github.com/thephpdeveloper/anchor-app" target="_blank">on Github</a>.
+                        </p>
+                        <p>
+                            <small>
+                                <span class="label label-warning">Note</span> Anchor App for Windows is released open-source under the BSD 3-Clause License. Images and other media on this website and within the application are licensed with <a href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.en_US" target="_blank">Creative Commons BY-NC-ND 3.0 Unported License</a>. 
+                            </small>
+                        </p>
+                        <div class="form-actions">
+                            <button class="btn btn-large slideNavigate" data-slide="previous"><i class="icon-chevron-left"></i></button>
+                            <button class="btn btn-large btn-success slideNavigate"><i class="icon-home icon-white"></i> Download</button>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <div class="row" style="margin-top:10px;">
+                <div class="span4">
+                    <div class="muted" style="text-align:center;">
+                        <footer>
+                            <p>
+                                &copy; 2012 <a href="http://heartcode.sg/" target="_blank">HeartCode Singapore</a> &hearts;
+                            </p>
+                        </footer>
+                    </div>
                 </div>
             </div>
         </div>
         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
         <script type="text/javascript" src="assets/scripts/bootstrap.min.js"></script>
+        <script type="text/javascript" src="assets/scripts/anc.js"></script>
     </body>
 </html>

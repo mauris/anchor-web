@@ -1,0 +1,88 @@
+/* 
+    Document   : anchor
+    Created on : Nov 17, 2012, 3:23:57 PM
+    Author     : Sam Yong
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+@import url("bootstrap.min.css");
+@import url("bootstrap-responsive.min.css");
+
+body{
+    background:#FAFAFA;    
+}
+
+@keyframes TopFlyIn
+{
+    from {top: -500px;opacity: 0.2;}
+    to {top: 0px;opacity:1;}
+}
+
+#imgScreenshot{
+    position:relative;
+}
+
+#btnLearnMore, section.slide {
+    display:none;
+}
+
+section.slide:nth-child(1){
+    display:block;
+}
+
+@keyframes ScreenshotJump1
+{
+    20% { transform: translateY(5px); }
+    40% { transform: translateY(-5px); }
+    60% { transform: translateY(5px); }
+    80% { transform: translateY(-5px); }
+    100% { transform: translateY(0px); }
+}
+
+@keyframes ScreenshotJump2
+{
+    20% { transform: translateY(5px); }
+    40% { transform: translateY(-5px); }
+    60% { transform: translateY(5px); }
+    80% { transform: translateY(-5px); }
+    100% { transform: translateY(0px); }
+}
+
+.animateTopFlyIn{
+    animation: TopFlyIn 1.5s;
+}
+
+#interfaceLabels{
+    height: 0;
+}
+
+#interfaceLabels span.label{
+    position:relative;
+}
+
+#interfaceInfo{
+    list-style:none;
+}
+
+#interfaceInfo li{
+    padding:3px;
+}
+
+#interfaceInfo li:hover{
+    background:#EEE;
+    border-radius:3px;
+}
+
+
+@keyframes FadeHalfIn
+{
+    from {opacity: 0.5;}
+    to {opacity:1;}
+}
+
+@keyframes FadeHalfOut
+{
+    from {opacity: 1;}
+    to {opacity:0.5;}
+}
